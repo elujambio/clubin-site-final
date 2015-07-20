@@ -1,0 +1,46 @@
+@font-face{
+	src:url(../fnt/AG.otf);
+	font-family:Againts;
+}
+html, 
+body{
+	height:100%;
+	width:100%;
+	margin: 0 0;
+	padding: 0 0;
+	color:#faeebc;
+	background-color: rgb(9,9,18);
+}
+ul,	
+li{
+	margin:0 0;
+	padding:0 0;
+	list-style-type:none; 
+}
+p{
+	display:block;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	font-size: 18pt;
+}
+.int,
+.ext{
+	text-align: center;
+	margin:0 0;
+}
+.ext{
+    height: 100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.int{
+	position:relative;
+}

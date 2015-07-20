@@ -1,0 +1,36 @@
+/*
+
+ANIMATION AND KEYFRAMES
+
+*/
+
+@keyframes forth{
+/*	0%{ 
+		transform:translateX(0%); 
+	}
+    100% { 
+
+    	transform:translateX(-100%); 
+    }*/
+    0%{
+    	transform:translateX(0);
+    }
+    100%{
+    	transform:translateX(-94.7368%);
+    }
+}
+@keyframes back{
+/*	0%{ 
+		transform:translateX(0%); 
+	}
+    100% { 
+
+    	transform:translateX(-100%); 
+    }*/
+    0%{
+    	transform:translateX(-94.7368%);
+    }
+    100%{
+    	transform:translateX(0);
+    }
+}
