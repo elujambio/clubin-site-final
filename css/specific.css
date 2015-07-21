@@ -50,12 +50,25 @@
 	flex-direction:column;
 	justify-content:space-between;
 }
+/* First goes slide ID then Container Number*/
+#oneOne{
+	height:25%;
+}
+#oneTwo{
+	height:20%;
+	justify-content:center;
+}
+#oneTwo h1{
+	margin:auto;
+}
 #oneThree{
 	height:55%;
 }
+
 #oneThree img{
 	height:100%;
 	transform:translateY(100%);
+
 }
 
 #two{
