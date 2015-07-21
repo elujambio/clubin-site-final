@@ -47,5 +47,20 @@ function scrollHandler(){
     	menuSpritesheet.src="img/clubin-menu.svg";    
     }    	
 }
-window.onscroll = scrollHandler;
+// window.onscroll = scrollHandler;
 // body[0].addEventListener("scroll", scrollHandler);
+
+var didScroll = false;
+
+window.onscroll = doThisStuffOnScroll;
+
+function doThisStuffOnScroll() {
+    didScroll = true;
+}
+
+setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+        console.log('You scrolled');
+    }
+}, 100);

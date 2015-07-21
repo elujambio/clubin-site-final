@@ -44,7 +44,7 @@ ANIMATION AND KEYFRAMES
     }
 }
 .show{
-    animation:show 800ms forwards;
+    animation:show 1200ms forwards;
     animation-timing-function:cubic-bezier(.19,1,.22,1);
     -webkit-animation-delay: 200ms; /* Chrome, Safari, Opera */
     animation-delay: 200ms;
