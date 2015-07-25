@@ -32,11 +32,11 @@
 	line-height:72px;
 	pointer-events: none;
 	opacity:0;
-	transition:opacity .3s;
-	transition-timing-function:ease-out;
 }
 #menu ul{
 	align-self:flex-start;
+	margin:auto;
+	padding:auto;
 	text-align: left;
 	padding-left:72px;
 }
@@ -53,27 +53,49 @@
 /* First goes slide ID then Container Number*/
 #oneOne{
 	height:25%;
+	opacity:0;
 }
 #oneTwo{
-	height:20%;
-	justify-content:center;
-}
-#oneTwo h1{
-	margin:auto;
+	height:auto;
+	opacity:0;
 }
 #oneThree{
 	height:55%;
-}
-
-#oneThree img{
-	height:100%;
 	transform:translateY(100%);
-
 }
 
 #two{
 	background-color:#f1f2f2;
+	color:#2c2c2c;
+	justify-content:center;
+} 
+#two section{
+	margin-left:144px;
 }
-#two #first img{
+#two h1{
+	font-family:EB;
+}
+#two p{
+	text-align: left;
+}
+#two #first{
+	height:60%;
+}
+
+#three{
+	background-color:#f1f2f2;
+	color:#2c2c2c;
+	justify-content:center;
+} 
+#three section{
+	margin-right:144px;
+}
+#three h1{
+	font-family:EB;
+}
+#three p{
+	text-align: left;
+}
+#three #first{
 	height:60%;
 }
