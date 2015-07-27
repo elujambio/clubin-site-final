@@ -1,7 +1,11 @@
 var navbarMenu = document.getElementById("navbarMenu");
 var menuSpritesheet = document.getElementById("menuSpritesheet");
 var menu = document.getElementById("menu");
-var oneThree = document.getElementById("oneThree");
+
+var oneFirst = document.getElementsByClassName("int first")[0];
+var oneSecond = document.getElementsByClassName("int second")[0];
+var oneThird = document.getElementsByClassName("int third")[0];
+
 var toggle = 1;
 var body = document.getElementsByTagName("body");
 var glyphSmall = document.getElementById("glyphSmall");
@@ -24,11 +28,11 @@ function toggleMenu(){
 }
 
 body[0].onload=function(){
-	oneThree.className = oneThree.className + " show";
-	oneOne.style.opacity = "1";
-	oneOne.style.transition = "opacity 2s ease";	
-	oneTwo.style.opacity = "1";
-	oneTwo.style.transition = "opacity 4s ease";
+	oneThird.className = oneThird.className + " show";
+	// oneFirst.style.opacity = "1";
+	// oneFirst.style.transition = "opacity 2s ease";	
+	oneSecond.style.opacity = "1";
+	oneSecond.style.transition = "opacity 4s ease";
 
 };
 
@@ -76,8 +80,14 @@ setInterval(function() {
     }
 
     if(counter>0  && counter<2){
-    	glyphSmall.style.fill = "#cdb378";
-    	menuSpritesheet.src="img/clubin-menu-dark.svg";
+    	glyphSmall.style.transition = "opacity .8s ease";
+    	glyphSmall.style.opacity = "0";
+    	menuLight.style.transition = "opacity .8s ease";
+    	menuLight.style.opacity = "0";
+    	menuDark.style.transition = "opacity .8s ease";
+    	menuDark.style.opacity = "1";
+
+    	// menuSpritesheet.src="img/clubin-menu-dark.svg";
     	menu.style.transition = "color .4s ease";
     	menu.style.transition = "background-color .4s ease";  
     	menu.style.color= "#cdb378";
@@ -85,8 +95,13 @@ setInterval(function() {
 
     }
     if(counter<0 && counter>-2){
-    	glyphSmall.style.fill = "url(#gradient)";
-    	menuSpritesheet.src="img/clubin-menu.svg";    
+    	glyphSmall.style.transition = "opacity .8s ease";
+    	glyphSmall.style.opacity = "1";
+    	menuLight.style.transition = "opacity .8s ease";
+    	menuLight.style.opacity = "1";
+    	menuDark.style.transition = "opacity .8s ease";
+    	menuDark.style.opacity = "0";    	
+		// menuSpritesheet.src="img/clubin-menu.svg";    
     	menu.style.transition = "color .4s ease";
     	menu.style.transition= "background-color .4s ease";  
     	menu.style.color= "#faeebc";

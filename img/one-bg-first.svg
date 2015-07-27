@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920px" height="1920px"
+	 viewBox="0 0 1920 1920" enable-background="new 0 0 1920 1920" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="1920" width="1920" y="-1389" x="-2215" bottomLeftOrigin="true"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<g>
+	<polygon fill="#161616" points="567.784,968.151 621.19,968.151 594.487,881.164 	"/>
+	<path fill="#161616" d="M972.338,872.264h-49.765v42.481h49.765c13.756,0,26.703-6.472,26.703-21.444
+		C999.041,878.736,986.094,872.264,972.338,872.264z"/>
+	<path fill="#161616" d="M285.817,872.264H234.03v42.481h51.787c13.756,0,24.681-6.878,24.681-21.038
+		C310.498,879.142,299.574,872.264,285.817,872.264z"/>
+	<path fill="#161616" d="M0,0v1920h1920V0H0z M296.336,985.954H234.03v84.962h-81.728V801.055h144.034
+		c63.116,0,97.103,42.078,97.103,92.653C393.439,943.876,359.452,985.954,296.336,985.954z M652.749,1070.917l-9.709-31.559h-97.103
+		l-9.709,31.559h-92.65l99.528-269.862h102.765l99.528,269.862H652.749z M989.329,1070.917l-37.222-84.962h-29.534v84.962h-81.728
+		V801.055h144.034c63.116,0,97.103,42.078,97.103,92.653c0,46.528-27.109,71.206-48.553,81.725l48.956,95.484H989.329z
+		 M1403.6,872.264h-72.016v198.653h-81.728V872.264h-72.422v-71.209H1403.6V872.264z M1667.358,963.701v107.215h-81.725V963.701
+		l-101.147-162.646h91.841l50.169,91.034l49.359-91.034h91.843L1667.358,963.701z"/>
+</g>
+</svg>

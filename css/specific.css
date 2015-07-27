@@ -5,26 +5,36 @@
 	justify-content:space-between;
 	position:fixed;
 	z-index:11000;
+	transition:height .5s ease;
 }
 #navbarGlyph{
-	margin-left:144px;
-}
+	transition:height .5s ease;
+	height:72px;
+	width:auto;
+/*	margin-left:144px;
+*/}
 #navbarMenu{
+	transition:height .5s ease;	
 	overflow:hidden;
 	width:72px;
 	height:72px;
-	margin-right:144px;
-}
+/*	margin-right:144px;
+*/}
 #menuSpritesheet{
-	height:72px;
+	transition:height .5s ease;	
+	height:56px;
 	width:auto;
 	position:absolute;
 	left:0;
 	z-index:10000 !important;
 }
+#menuDark{
+	opacity:0;
+}
 #menu{
 	position:fixed;
-	font-family:EB;
+	font-family:PN-EB;
+	color:#f6eda0;
 	background:rgba(9,9,16,.98);
 	z-index:10000;
 	font-size: 48px;
@@ -44,36 +54,53 @@
 
 }
 #one{
+	color:#f6eda0;
+	background-color:#211d1c;
 	padding-top:216px;
 	height: calc(100% - 216px);
 	overflow: hidden;
 	flex-direction:column;
 	justify-content:space-between;
+/*	background:url(../img/one-bg-first.svg), url(../img/one-bg-second.jpg);
+	background-position:center center,center center, center center;
+	background-size:contain contain;*/
 }
 /* First goes slide ID then Container Number*/
-#oneOne{
+#one .first{
 	height:25%;
 	opacity:0;
 }
-#oneTwo{
+#one h1,
+#one h2{
+	margin:0;
+	padding:0;
+}
+#one p{
+	font-family:PN-LI;
+	text-align:left;
+}
+#one section{
+	transition:padding .5s ease;
+}
+#one .second {
 	height:auto;
 	opacity:0;
 }
-#oneThree{
+#one .third{
 	height:55%;
 	transform:translateY(100%);
 }
 
 #two{
-	background-color:#f1f2f2;
-	color:#2c2c2c;
+	background-color:#faf8f5;
+	color:#262117;
 	justify-content:center;
+	line-height: 200%;
 } 
 #two section{
-	margin-left:144px;
-}
+/*	margin-left:144px;
+*/}
 #two h1{
-	font-family:EB;
 }
 #two p{
 	text-align: left;
@@ -83,19 +110,149 @@
 }
 
 #three{
-	background-color:#f1f2f2;
-	color:#2c2c2c;
+	background-color:#262117;
+	color:#cdb378;
 	justify-content:center;
 } 
 #three section{
-	margin-right:144px;
-}
+/*	margin-right:144px;
+*/}
 #three h1{
-	font-family:EB;
+	font-family:PN-EB;
 }
 #three p{
 	text-align: left;
 }
 #three #first{
 	height:60%;
+}
+
+
+
+#navbarGlyph{
+/*	margin-left:144px;
+*/}
+#navbarMenu{
+	overflow:hidden;
+	width:72px;
+	height:72px;
+/*	margin-right:144px;
+*/}
+@media screen and (max-width: 1440px){
+	#navbar{
+		height:168px;
+	}
+	#one{
+		height: calc(100% - 168px);
+		padding-top:168px;
+	}
+	#one section{
+		padding-top:72px;
+	}
+}
+@media screen and (max-width: 1280px){
+	#navbar{
+		height:168px;
+	}
+	#navbarGlyph{
+		height:56px;
+		width:auto;
+	}	
+	#navbarMenu{
+		width:56px;
+		height:56px;
+	}
+	#menuSpritesheet{
+		height:56px;
+		width:auto;
+	}
+	#one{
+		height: calc(100% - 168px);
+		padding-top:168px;
+	}
+	#one section{
+		padding-top:56px;
+	}
+}
+@media screen and (max-width: 1024px){
+	#navbar{
+		height:144px;
+	}
+	#navbarGlyph{
+		height:48px;
+		width:auto;
+	}	
+	#navbarMenu{
+		width:48px;
+		height:48px;
+	}
+	#menuSpritesheet{
+		height:48px;
+		width:auto;
+	}
+	#one{
+		height: calc(100% - 144px);
+		padding-top:144px;	
+	}
+	#one section{
+		padding-top:48px;
+	}
+	#two,
+	#three{
+		flex-direction:column;
+	}
+	#two section,
+	#three section{
+		margin-left:0;
+		margin-right:0;
+	}
+
+}
+@media screen and (max-width: 768px){
+	#navbar{
+		height:108px;
+	}
+	#navbarGlyph{
+		height:36px;
+		width:auto;
+	}	
+	#navbarMenu{
+		width:36px;
+		height:36px;
+	}
+	#menuSpritesheet{
+		height:36px;
+		width:auto;
+	}
+	#one{
+		height: calc(100% - 108px);
+		padding-top:108px;
+	}
+	#one section{
+		padding-top:36px;
+	}
+}
+@media screen and (max-width: 540px){
+	#navbar{
+		height:72px;
+	}
+	#navbarGlyph{
+		height:24px;
+		width:auto;
+	}	
+	#navbarMenu{
+		width:24px;
+		height:24px;
+	}
+	#menuSpritesheet{
+		height:24px;
+		width:auto;
+	}
+	#one{
+		height: calc(100% - 72px);
+		padding-top:72px;
+	}
+	#one section{
+		padding-top:24px;
+	}
 }

@@ -4,7 +4,11 @@
 }
 @font-face{
 	src:url(../fnt/PN-EB.otf);
-	font-family:EB;
+	font-family:PN-EB;
+}
+@font-face{
+	src:url(../fnt/PN-LI.otf);
+	font-family:PN-LI;
 }
 html, 
 body{
@@ -22,16 +26,23 @@ li{
 	list-style-type:none; 
 }
 h1{
-	font-family:AG;
+	font-family:PN-EB;
+	text-align:left;
 	font-weight:normal;
-	font-size:48px;
+	font-size:72px;
 	letter-spacing:4px;		
 }
+h2{
+	font-family:Roboto;
+	font-weight: normal;
+	font-size:21px;
+}
 p{
+	font-family:Roboto;
 	display:block;
 	padding:0 0 0 0;
 	margin:0 0 0 0;
-	font-size: 18pt;
+	font-size: 18px;
 }
 .int,
 .ext{
@@ -53,4 +64,134 @@ p{
 }
 .int{
 	position:relative;
+}
+.marginLeft{
+	transition: margin .5s ease;
+	margin-left:144px;
+}
+.marginRight{
+	transition: margin .5s ease;
+	margin-right:144px;
+}
+.marginTop{
+	transition: margin .5s ease;
+	margin-top:144px;
+}
+.marginBottom{
+	transition: margin .5s ease;	
+	margin-bottom:144px;
+}
+.paddedLeft{
+	padding-left:;
+}
+.paddedRight{
+
+}
+.paddedTop{
+
+}
+.paddedBottom{
+
+}
+@media screen and (max-width: 1440px){
+	h1{
+		font-size:72px;
+	}
+	.marginLeft{
+		margin-left:96px;
+	}
+	.marginRight{
+		margin-right:96px;
+	}
+	.marginTop{
+		margin-top:96px;
+	}
+	.marginBottom{
+		margin-bottom:96px;
+	}
+}
+@media screen and (max-width: 1280px){
+	h1{
+		font-size:48px;
+	}
+	.marginLeft{
+		margin-left:72px;
+	}
+	.marginRight{
+		margin-right:72px;
+	}
+	.marginTop{
+		margin-top:72px;
+	}
+	.marginBottom{
+		margin-bottom:72px;
+	}
+}
+@media screen and (max-width: 1024px){
+	h1{
+		font-size:36px;
+	}	
+	.marginLeft{
+		margin-left:60px;
+	}
+	.marginRight{
+		margin-right:60px;
+	}
+	.marginTop{
+		margin-top:60px;
+	}
+	.marginBottom{
+		margin-bottom:60px;
+	}
+}
+@media screen and (max-width: 768px){
+/*	h1{
+		font-size:24px;
+	}*/
+	.marginLeft{
+		margin-left:48px;
+	}
+	.marginRight{
+		margin-right:48px;
+	}
+	.marginTop{
+		margin-top:48px;
+	}
+	.marginBottom{
+		margin-bottom:48px;
+	}
+}
+@media screen and (max-width: 540px){
+	h1{
+		font-size:24px;
+	}
+	.marginLeft{
+		margin-left:36px;
+	}
+	.marginRight{
+		margin-right:36px;
+	}
+	.marginTop{
+		margin-top:36px;
+	}
+	.marginBottom{
+		margin-bottom:36px;
+	}
+}
+@media screen and (max-width: 480px){
+/*	h1{
+		font-size:24px;
+	}*/
+	.marginLeft{
+		margin-left:18px;
+	}
+	.marginRight{
+		margin-right:18px;
+	}
+	.marginTop{
+		margin-top:18px;
+	}
+	.marginBottom{
+		margin-bottom:18px;
+	}
 }
