@@ -11,9 +11,6 @@ var body = document.getElementsByTagName("body");
 var glyphSmall = document.getElementById("glyphSmall");
 navbarMenu.addEventListener("click", toggleMenu);
 
-var headers = document.getElementsByTagName("h1");
-var paragraphs = document.getElementsByTagName("p");
-
 function toggleMenu(){
 	if(toggle==0){
 		menu.style.transition= "opacity .3s";
@@ -36,6 +33,7 @@ body[0].onload=function(){
 	// oneFirst.style.transition = "opacity 2s ease";	
 	oneSecond.style.opacity = "1";
 	oneSecond.style.transition = "opacity 4s ease";
+
 };
 
 
@@ -74,7 +72,6 @@ function doThisStuffOnScroll() {
 setInterval(function() {
     if(didScroll==true) {
     var counter = 0;
-
     one.style.top="0px";
     if(window.pageYOffset >= (one.clientHeight - one.offsetTop - navbar.clientHeight)){
     	counter=2;
