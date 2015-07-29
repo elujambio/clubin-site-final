@@ -11,6 +11,9 @@ var body = document.getElementsByTagName("body");
 var glyphSmall = document.getElementById("glyphSmall");
 navbarMenu.addEventListener("click", toggleMenu);
 
+var headers = document.getElementsByTagName("h1");
+var paragraphs = document.getElementsByTagName("p");
+
 function toggleMenu(){
 	if(toggle==0){
 		menu.style.transition= "opacity .3s";
@@ -33,7 +36,6 @@ body[0].onload=function(){
 	// oneFirst.style.transition = "opacity 2s ease";	
 	oneSecond.style.opacity = "1";
 	oneSecond.style.transition = "opacity 4s ease";
-
 };
 
 
@@ -72,29 +74,22 @@ function doThisStuffOnScroll() {
 setInterval(function() {
     if(didScroll==true) {
     var counter = 0;
+
+    one.style.top="0px";
     if(window.pageYOffset >= (one.clientHeight - one.offsetTop - navbar.clientHeight)){
-    	counter++;
+    	counter=2;
     }
     if(window.pageYOffset <= (one.clientHeight - one.offsetTop - navbar.clientHeight)){
-    	counter--;
+    	counter=1;
     }
-
-    if(counter>0  && counter<2){
-    	glyphSmall.style.transition = "opacity .8s ease";
-    	glyphSmall.style.opacity = "0";
-    	menuLight.style.transition = "opacity .8s ease";
-    	menuLight.style.opacity = "0";
-    	menuDark.style.transition = "opacity .8s ease";
-    	menuDark.style.opacity = "1";
-
-    	// menuSpritesheet.src="img/clubin-menu-dark.svg";
-    	menu.style.transition = "color .4s ease";
-    	menu.style.transition = "background-color .4s ease";  
-    	menu.style.color= "#cdb378";
-    	menu.style.backgroundColor= "#f5f5f5";    	
-
+    if(window.pageYOffset >= (one.clientHeight*2 - one.offsetTop - navbar.clientHeight)){
+    	counter=3;
     }
-    if(counter<0 && counter>-2){
+    if(counter==1){
+	    if(one.clientWidth < 540){
+	    	navbar.style.transition = "background-color .5s ease";
+	    	navbar.style.backgroundColor = "rgba(16,16,16,.8)";	
+	    }
     	glyphSmall.style.transition = "opacity .8s ease";
     	glyphSmall.style.opacity = "1";
     	menuLight.style.transition = "opacity .8s ease";
@@ -105,9 +100,44 @@ setInterval(function() {
     	menu.style.transition = "color .4s ease";
     	menu.style.transition= "background-color .4s ease";  
     	menu.style.color= "#faeebc";
-    	menu.style.backgroundColor = "#090910";  
-    }    	    	
+    	menu.style.backgroundColor = "rgba(33,29,28,.95)";  
+    }   
+    if(counter==2){
+	    if(one.clientWidth < 540){
+	    	navbar.style.transition = "background-color .5s ease";
+	    	navbar.style.backgroundColor = "rgba(250,248,245,.9)";	
+	    }
+    	glyphSmall.style.transition = "opacity .8s ease";
+    	glyphSmall.style.opacity = "0";
+    	menuLight.style.transition = "opacity .8s ease";
+    	menuLight.style.opacity = "0";
+    	menuDark.style.transition = "opacity .8s ease";
+    	menuDark.style.opacity = "1";    	
+    	// menuSpritesheet.src="img/clubin-menu-dark.svg";
+    	menu.style.transition = "color .4s ease";
+    	menu.style.transition = "background-color .4s ease";  
+    	menu.style.color= "#cdb378";
+    	menu.style.backgroundColor= "#f5f5f5";    	
+
+    }
+    if(counter==3){
+	    if(one.clientWidth < 540){
+	    	navbar.style.transition = "background-color .5s ease";
+	    	navbar.style.backgroundColor = "rgba(38,33,23,.8)";	
+	    }
+    	glyphSmall.style.transition = "opacity .8s ease";
+    	glyphSmall.style.opacity = "1";
+    	menuLight.style.transition = "opacity .8s ease";
+    	menuLight.style.opacity = "1";
+    	menuDark.style.transition = "opacity .8s ease";
+    	menuDark.style.opacity = "0";    	
+		// menuSpritesheet.src="img/clubin-menu.svg";    
+    	menu.style.transition = "color .4s ease";
+    	menu.style.transition= "background-color .4s ease";  
+    	menu.style.color= "#faeebc";
+    	menu.style.backgroundColor = "rgba(38,33,23,.95)";  	    
+	}     	    	
         didScroll = false;
-        console.log('You scrolled');
+        console.log('You scrolled ' + counter);
     }
 }, 100);

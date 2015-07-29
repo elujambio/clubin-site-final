@@ -34,8 +34,8 @@
 #menu{
 	position:fixed;
 	font-family:PN-EB;
-	color:#f6eda0;
-	background:rgba(9,9,16,.98);
+	color: rgb(246, 237, 160);
+	background-color:rgba(33,29,28,.9);
 	z-index:10000;
 	font-size: 48px;
 	letter-spacing:8px;
@@ -49,6 +49,15 @@
 	padding:auto;
 	text-align: left;
 	padding-left:72px;
+
+}
+#menu li{
+	transition:color .4s ease;
+}
+
+#menu li:hover{
+	transition:color .4s ease;
+	color:#B71C1C;
 }
 #menuSpritesheet{
 
@@ -66,14 +75,20 @@
 	background-size:contain contain;*/
 }
 /* First goes slide ID then Container Number*/
+#splash{
+	height:100%;
+	width:100%;
+	position:absolute;
+}
 #one .first{
 	height:25%;
 	opacity:0;
 }
 #one h1,
 #one h2{
-	margin:0;
-	padding:0;
+	margin-top:0;
+	margin-bottom:0;
+	padding:auto;
 }
 #one p{
 	font-family:PN-LI;
@@ -88,14 +103,16 @@
 }
 #one .third{
 	height:55%;
+	margin-top:5%;
 	transform:translateY(100%);
 }
 
 #two{
-	background-color:#faf8f5;
+/*	top:100%;
+*/	background-color:#faf8f5;
 	color:#262117;
 	justify-content:center;
-	line-height: 200%;
+	line-height: 150%;
 } 
 #two section{
 /*	margin-left:144px;
@@ -106,7 +123,7 @@
 	text-align: left;
 }
 #two #first{
-	height:60%;
+	height:55%;
 }
 
 #three{
@@ -123,7 +140,7 @@
 #three p{
 	text-align: left;
 }
-#three #first{
+#three #second{
 	height:60%;
 }
 
@@ -190,6 +207,15 @@
 		height:48px;
 		width:auto;
 	}
+	#menu{
+		font-size:36px;
+		line-height:48px;
+		letter-spacing: 4px;
+	}
+	#menu ul{
+		padding-left:48px;
+		padding-right:48px;
+	}	
 	#one{
 		height: calc(100% - 144px);
 		padding-top:144px;	
@@ -224,17 +250,82 @@
 		height:36px;
 		width:auto;
 	}
+	#menu{
+		font-size:36px;
+		line-height:48px;
+		letter-spacing: 4px;
+	}
+	#menu ul{
+		padding-left:36px;
+		padding-right:36px;
+	}	
 	#one{
 		height: calc(100% - 108px);
 		padding-top:108px;
 	}
 	#one section{
-		padding-top:36px;
+		padding-top:108px;
 	}
+	#two{
+		height: calc(100% - 108px);
+		padding-top:108px;		
+	}
+	#two section{
+		padding-top:48px;
+	}
+
 }
 @media screen and (max-width: 540px){
 	#navbar{
-		height:72px;
+		height:96px;
+		align-items:center;
+		background-color:rgba(33,29,28,.8);
+	}
+	#menu{
+		font-size:28px;
+		line-height:36px;
+		letter-spacing:4px;
+	}
+	#menu ul{
+		padding-left:24px;
+		padding-right:24px;
+	}		
+	#one{
+		height: calc(100% - 112px);
+		padding-top:112px;
+	}
+	#one section{
+		padding-top:18px;
+	}
+	#two{
+		height: calc(100% - 112px);
+		padding-top:112px;
+	}
+	#two section{
+		padding-top:12px;
+	}
+	#two #first{
+		height:50%;
+	}
+	#two #second{
+		margin-top:12px;
+	}
+	#three #second{
+		height:55%;
+		margin-top:12px;
+	}
+}
+@media screen and (max-width:360px){
+	#one{
+		height: calc(100% - 104px);
+		padding-top:104px;
+	}
+}
+/*@media screen and (max-width: 320px){
+	#navbar{
+		height:96px;
+		align-items:center;
+		background-color:rgba(33,29,28,.8);
 	}
 	#navbarGlyph{
 		height:24px;
@@ -249,10 +340,22 @@
 		width:auto;
 	}
 	#one{
-		height: calc(100% - 72px);
-		padding-top:72px;
+		height: calc(100% - 144px);
+		padding-top:144px;
 	}
 	#one section{
-		padding-top:24px;
+		padding-top:18px;
+	}
+	#two #first{
+		height:50%;
+		margin-top:72px;
+	}
+	#two #second{
+		margin-top:36px;
+	}
+	#three #second{
+		height:55%;
+		margin-top:15%;
 	}
 }
+*/

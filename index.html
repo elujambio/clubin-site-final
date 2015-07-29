@@ -23,11 +23,13 @@
 	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 	<meta name="theme-color" content="#cdb378">
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,400' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/colors.css">
 	<link rel="stylesheet" type="text/css" href="css/specific.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
+
+    <style> [data-sr] { visibility: hidden; } </style>
+
 </head>
 <body>
 <div class="ext" id="navbar">
@@ -116,34 +118,51 @@
 		<li>HELLO</li>
 		<li>ABOUT US</li>
 		<li>DEVELOPERS</li>
-		<li>WANT TO BE A PARTNER?</li>
+		<li class="red">WANT TO BE A PARTNER?</li>
 	</ul>
 </div>
 
 <div class="ext" id="one">
 <!-- 	<img class="int first" src="img/logo-full-size.svg"> -->
 	<section class="int second">
-	<h1>BOUNCERS ARE SO<br>LAST YEAR</h1>
-	<p><br>The easiest way to get a table at your favorite club,<br>minus bouncers.</p>
+	<h1 data-sr="enter top over 2s move 100%">BOUNCERS ARE<br>SO LAST YEAR</h1>
+	<p data-sr="enter top over 2s move 100%">The easiest way to get a table at your favorite club, <br>minus bouncers.</p>
 <!-- 	<h2>Book your table, forget bouncers.</h2>
  -->	</section>
 	<img class="int third" src="img/renders/render-1-upright-black-crop.png">
 </div>
 
 <div class="ext" id="two">
-	<img class="int" id="first" src="img/renders/render-7-black.png">
-	<section class="marginLeft">
+	<img data-sr="top left over 2s move 50%" class="int" id="first" src="img/renders/render-7-black.png">
+	<section data-sr="enter bottom over 2s move 50%" class="marginLeft" id="second">
 	<h1>EASY AS PIE</h1>
-	<p>Tap on </p>
+	<p>Tap on Reserve.<br>Choose your service.<br>Get passes for you and your friends.</p>
 	</section>
 </div>
 
 <div class="ext" id="three">
-	<section class="marginRight">
+	<section class="marginRight" id="first">
 	<h1>Easy As Pie</h1>
 	<p>Discover clubs.<br>Book your table.<br>Skip the bouncer.</p>
 	</section>
-	<img class="int" id="first" src="img/renders/render-7-black.png">
+	<img class="int" id="second" src="img/renders/render-7-black.png">
 </div>
-</body>
+<div class="ext" id="three">
+	<section class="marginRight" id="first">
+	<h1>Easy As Pie</h1>
+	<p>Discover clubs.<br>Book your table.<br>Skip the bouncer.</p>
+	</section>
+	<img class="int" id="second" src="img/renders/render-7-black.png">
+</div>
 <script src="js/general.js"></script>
+<script src="js/scrollReveal.min.js"></script>
+<script>
+	var config = {
+		reset:  false,
+		mobile: true,
+		delay:  'onload',
+	}
+	window.sr = new scrollReveal(config);
+
+</script>
+</body>

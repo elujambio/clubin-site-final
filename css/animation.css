@@ -49,3 +49,8 @@ ANIMATION AND KEYFRAMES
     -webkit-animation-delay: 200ms; /* Chrome, Safari, Opera */
     animation-delay: 200ms;
 }
+@oneBackgroundKeyframes{
+    10%{
+        
+    }
+}

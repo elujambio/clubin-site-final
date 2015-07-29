@@ -7,7 +7,7 @@
 	font-family:PN-EB;
 }
 @font-face{
-	src:url(../fnt/PN-LI.otf);
+	src:url(../fnt/PN-RI.otf);
 	font-family:PN-LI;
 }
 html, 
@@ -30,19 +30,20 @@ h1{
 	text-align:left;
 	font-weight:normal;
 	font-size:72px;
-	letter-spacing:4px;		
-}
-h2{
-	font-family:Roboto;
-	font-weight: normal;
-	font-size:21px;
+	letter-spacing:4px;
+/*	transition:transform .5s ease;
+	transition:opacity .5s ease;	
+	transform:translateY(-100%);*/	
 }
 p{
-	font-family:Roboto;
+	font-family:PN-LI;
 	display:block;
 	padding:0 0 0 0;
 	margin:0 0 0 0;
 	font-size: 18px;
+/*	transition:transform .5s ease;
+	transition:opacity .5s ease;
+	transform:translateY(-100%);*/	
 }
 .int,
 .ext{
@@ -61,6 +62,8 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+    z-index:200;
 }
 .int{
 	position:relative;
@@ -163,8 +166,17 @@ p{
 }
 @media screen and (max-width: 540px){
 	h1{
-		font-size:24px;
+		font-size:32px;
 	}
+	p{
+		font-size:14px;
+	}
+/*	h1,
+	h2,
+	p{
+		margin:auto 18px;
+		padding:auto 18px;
+	}	*/
 	.marginLeft{
 		margin-left:36px;
 	}
@@ -179,9 +191,9 @@ p{
 	}
 }
 @media screen and (max-width: 480px){
-/*	h1{
-		font-size:24px;
-	}*/
+	h1{
+		font-size:36px;
+	}
 	.marginLeft{
 		margin-left:18px;
 	}
@@ -193,5 +205,21 @@ p{
 	}
 	.marginBottom{
 		margin-bottom:18px;
+	}
+}
+@media screen and (max-width: 360px){
+	h1{
+		font-size:28px;
+	}
+	p{
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 320px){
+	h1{
+		font-size:24px;
+	}
+	p{
+		font-size:18px;
 	}
 }
